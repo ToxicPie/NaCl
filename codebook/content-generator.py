@@ -57,18 +57,6 @@ class DependencyGraph:
         return result if len(result) == len(self.sources) else None
 
 
-def get_config(filename):
-    try:
-        with open(filename, 'r') as file:
-            return yaml.safe_load(file)
-    except FileNotFoundError:
-        print(f'Config file `{filename}` not found.')
-        exit(2)
-    except yaml.YAMLError as ex:
-        print(ex)
-        exit(3)
-
-
 def get_includes(filename):
     INCLUDE_RE = re.compile(r'^\s*#\s*include\s*"(.+?)"')
     with open(filename, 'r') as file:
@@ -153,7 +141,9 @@ def main():
         exit(1)
 
     _, infile, outfile = sys.argv
-    config = get_config(infile)
+
+    with open(infile, 'r') as file:
+        config = yaml.safe_load(file)
 
     with open(outfile, 'w') as file:
         for line in generate_content(config):
