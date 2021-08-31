@@ -1,4 +1,31 @@
-include: []
+include:
+  - Misc:
+    - Contest:
+      - Makefile:
+        - misc/Makefile
+      - Default Code:
+        - misc/default-code.hpp
+    - 'How Did We Get Here?':
+      - Macros:
+        - misc/macros.hpp
+      - constexpr:
+        - misc/constexpr.hpp
+      - Bump Allocator:
+        - misc/bump-allocator.hpp
+    - Tools:
+      - Floating Point Binary Search:
+        - misc/float-binary-search.hpp
+      - SplitMix64:
+        - misc/splitmix64.hpp
+      - '<random>':
+        - misc/random.hpp
+    - Algorithms:
+      - Bit Hacks:
+        - misc/bit-hacks.hpp
+      - Aliens Trick:
+        - misc/aliens.hpp
+      - Hilbert Curve:
+        - misc/hilbert.hpp
 dependencies:
   show: true
   ignore_cycles: false
