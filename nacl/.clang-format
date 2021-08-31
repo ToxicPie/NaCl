@@ -1,0 +1,23 @@
+---
+Language:                            Cpp
+BasedOnStyle:                        LLVM
+
+ColumnLimit:                         60
+ContinuationIndentWidth:             0
+IndentWidth:                         2
+MaxEmptyLinesToKeep:                 2
+TabWidth:                            2
+UseTab:                              Never
+
+AllowShortBlocksOnASingleLine:       Always
+AllowShortCaseLabelsOnASingleLine:   true
+AllowShortEnumsOnASingleLine:        true
+AllowShortFunctionsOnASingleLine:    All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLambdasOnASingleLine:      All
+AllowShortLoopsOnASingleLine:        true
+
+AlignConsecutiveDeclarations:        false
+AlignConsecutiveMacros:              true
+
+NamespaceIndentation:                Inner
