@@ -5,15 +5,15 @@ import re
 
 
 def process_code(filename):
-    KEEP_INCLUDE_MACRO = '// keep-line\n'
+    KEEP_LINE_MACRO = '// keep-line\n'
     INCLUDE_RE = re.compile(r'^\s*#\s*include.*$')
-    CLANG_FORMAT_RE = re.compile(r'^(//|/\*) clang-format .*')
+    CLANG_FORMAT_RE = re.compile(r'(//|/\*) clang-format .*')
     C_COMMENT_RE = re.compile(r'\s*///.*$')
-    PY_COMMENT_RE = re.compile(r'\s*##.*$')
+    PY_COMMENT_RE = re.compile(r'\s*###.*$')
     with open(filename, 'r') as file:
         for line in file:
-            if line.endswith(KEEP_INCLUDE_MACRO):
-                line = line.rstrip(KEEP_INCLUDE_MACRO) + '\n'
+            if line.endswith(KEEP_LINE_MACRO):
+                line = line.rstrip(KEEP_LINE_MACRO) + '\n'
             else:
                 line = INCLUDE_RE.sub('', line)
                 line = CLANG_FORMAT_RE.sub('', line)
