@@ -57,17 +57,19 @@
 \setlength{\columnseprule}{0pt}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{0pt}
+\setlength{\lineskip}{-0.9pt}
 
 
 \definecolor{mygray}{rgb}{0.52, 0.52, 0.52}
+\definecolor{myred}{rgb}{0.5, 0.15, 0.07}
 
 
 \titlespacing\section
-{0pt}{2pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+{0pt}{6pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
 \titlespacing\subsection
-{0pt}{-2pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+{0pt}{2pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
 \titlespacing\subsubsection
-{0pt}{-2pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
+{0pt}{2pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}
 
 \titleformat\section
 {\vspace{1.2ex}{\color{mygray}{\titlerule}}\vspace{.2ex}\normalsize\bfseries}
@@ -79,9 +81,7 @@
 
 
 \setminted{
-    breaklines,
-    breakanywhere,
-    breakautoindent,
+    breaklines=false,
     frame=single,
     numbers=left,
     numbersep=2pt,
@@ -133,13 +133,18 @@
 }
 
 \newcommand\requires[1]{%
-\vspace{-1.5ex}%
+\vspace{-2.4ex}%
 \begin{flushright}Requires: #1\end{flushright}%
-\vspace{-5ex}%
+\vspace{-3ex}%
 }
 
 \newcommand\inputcode[3]{%
 \immediate\write18{python3 preprocessor.py "#2" "#3"}%
+\vspace{-1.4ex}
 \inputminted{#1}{#3}%
-\vspace{-2ex}%
+\vspace{-2.4ex}%
+}
+
+\newcommand\icode[1]{%
+\textcolor{myred}{#1}%
 }
