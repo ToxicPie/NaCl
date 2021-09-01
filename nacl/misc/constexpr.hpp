@@ -16,8 +16,3 @@ template <typename... T> void print_tuple(tuple<T...> t) {
   for_constexpr(make_index_sequence<sizeof...(T)>{},
                 [&](auto i) { cout << get<i>(t) << '\n'; });
 }
-// some default limits in g++ (7.x - trunk):
-// constexpr recursion depth: 512
-// constexpr loop iteration (per function): 262144
-// constexpr operation count (per function): 33554432
-// template recursion depth: 900 (g++ might segfault)

@@ -10,6 +10,7 @@ include:
         - misc/macros.tex
         - misc/macros.hpp
       - constexpr:
+        - misc/constexpr.tex
         - misc/constexpr.hpp
       - Bump Allocator:
         - misc/bump-allocator.hpp
