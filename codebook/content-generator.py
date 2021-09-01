@@ -14,7 +14,7 @@ class DependencyGraph:
 
     def __init__(self, sources):
         self.sources = list(sources)
-        self.id_map = {name: id for id, name in enumerate(sources)}
+        self.id_map = {name: id_ for id_, name in enumerate(sources)}
         self.use_sets = [set() for _ in sources]
         self.dep_sets = [set() for _ in sources]
 
@@ -29,10 +29,10 @@ class DependencyGraph:
 
     def get_dependencies(self, source):
         try:
-            id = self.id_map[source]
+            id_ = self.id_map[source]
         except KeyError as e:
             raise KeyError(f'`{e}` is not a valid source file.')
-        for dep in self.dep_sets[id]:
+        for dep in self.dep_sets[id_]:
             yield self.sources[dep]
 
     def topological_sort(self):
