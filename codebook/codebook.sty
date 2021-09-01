@@ -55,9 +55,9 @@
 \setlength{\hoffset}{-53pt}
 \setlength{\columnsep}{15pt}
 \setlength{\columnseprule}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{2.4pt}
 \setlength{\parindent}{0pt}
-\setlength{\lineskip}{-0.9pt}
+\setlength{\lineskip}{0.4pt}
 
 
 \definecolor{mygray}{rgb}{0.52, 0.52, 0.52}
@@ -78,6 +78,16 @@
 {\normalsize\bfseries}{\thesubsection.}{1em}{}
 \titleformat\subsubsection
 {\normalsize\bfseries}{\thesubsubsection.}{1em}{}
+
+\setlist{
+    leftmargin=10pt,
+    labelindent=12pt,
+    labelsep=2pt,
+    topsep=0pt plus 2pt minus 0pt,
+    partopsep=0pt plus 2pt minus 0pt,
+    parsep=0pt plus 2pt minus 0pt,
+    itemsep=0pt plus 2pt minus 0pt
+}
 
 
 \setminted{
@@ -140,7 +150,7 @@
 
 \newcommand\inputcode[3]{%
 \immediate\write18{python3 preprocessor.py "#2" "#3"}%
-\vspace{-1.4ex}
+\vspace{-1.4ex}%
 \inputminted{#1}{#3}%
 \vspace{-2.4ex}%
 }
