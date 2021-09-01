@@ -7,6 +7,7 @@ include:
         - misc/default-code.hpp
     - 'How Did We Get Here?':
       - Macros:
+        - misc/macros.tex
         - misc/macros.hpp
       - constexpr:
         - misc/constexpr.hpp

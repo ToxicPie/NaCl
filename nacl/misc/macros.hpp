@@ -5,6 +5,4 @@
 #pragma GCC target("avx,avx2,abm,bmi,bmi2") // tip: `lscpu`
 // before a loop
 #pragma GCC unroll 16 // 0 or 1 -> no unrolling
-#pragma GCC ivdep     // use with caution
-// gcc>=9 has [[likely]] [[unlikely]]
-// more gcc opt info: -fopt-info-optimized-missed-optall
+#pragma GCC ivdep
