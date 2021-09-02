@@ -11,6 +11,7 @@ Run `make help` for a list of build commands.
 
 Editing the codebook's content should be very simple, thanks to the automated 
 TeX file generator. 
+
 To add new content to the codebook, first put the files to add (code snippets 
 or TeX files) somewhere under `nacl/`. You may also modify existing files.
 
@@ -55,3 +56,7 @@ cycle. These behaviors can be changed in the config file.
     -   `pygments` package
 -   Clang-Format 13 or newer
 -   Fira Mono font
+
+## License
+
+See [COPYING](COPYING.md) for details.
