@@ -1,13 +1,12 @@
 // min dp[i] value and its i (smallest one)
-pll get_dp(int n);
-ll aliens(int n) {
-  int l = 0, r = 1000000;
+pll get_dp(int cost);
+ll aliens(int k, int l, int r) {
   while (l != r) {
     int m = (l + r) / 2;
     auto [f, s] = get_dp(m);
-    if (s == n) return f - m * n;
-    if (s < n) r = m;
+    if (s == k) return f - m * k;
+    if (s < k) r = m;
     else l = m + 1;
   }
-  return get_dp(--l).first - l * n;
+  return get_dp(l).first - l * k;
 }

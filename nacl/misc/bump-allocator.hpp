@@ -1,3 +1,6 @@
+/// source: KACTL BumpAllocator.h, BumpAllocatorSTL.h
+/// author: Simon Lindholm
+
 // global bump allocator
 char mem[256 << 20]; // 256 MB
 size_t rsp = sizeof mem;

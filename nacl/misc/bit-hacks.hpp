@@ -1,4 +1,5 @@
-ull next_permutation(ull x) {
+// next permutation of x as a bit sequence
+ull next_bits_permutation(ull x) {
   ull c = __builtin_ctzll(x), r = x + (1 << c);
   return (r ^ x) >> (c + 2) | r;
 }

@@ -3,17 +3,17 @@
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage{fontspec}
-\RequirePackage[x11names]{xcolor}
+\RequirePackage{array}
+\RequirePackage{enumitem}
 \RequirePackage{fancyhdr}
+\RequirePackage{fontspec}
 \RequirePackage{graphicx}
-\RequirePackage{titlesec}
-\RequirePackage{tocbasic}
 \RequirePackage[xetex, pdfusetitle]{hyperref}
 \RequirePackage{minted}
-\RequirePackage{enumitem}
 \RequirePackage{multicol}
-\RequirePackage{fontspec}
+\RequirePackage{titlesec}
+\RequirePackage{tocbasic}
+\RequirePackage[x11names]{xcolor}
 
 % package options
 \newif\ifchinese\chinesefalse
@@ -56,7 +56,8 @@
 \setlength{\columnseprule}{0pt}
 \setlength{\parskip}{2.4pt}
 \setlength{\parindent}{0pt}
-\setlength{\lineskip}{0.8pt}
+\setlength{\lineskip}{1.2pt}
+\setlength{\extrarowheight}{8pt}
 
 
 \definecolor{mygray}{rgb}{0.52, 0.52, 0.52}
@@ -83,9 +84,9 @@
     labelindent=12pt,
     labelsep=2pt,
     topsep=0pt plus 2pt minus 0pt,
-    partopsep=0pt plus 2pt minus 0pt,
-    parsep=0pt plus 2pt minus 0pt,
-    itemsep=2pt plus 2pt minus 1pt
+    partopsep=-2pt plus 2pt minus 0pt,
+    parsep=-2pt plus 2pt minus 0pt,
+    itemsep=0pt plus 2pt minus 0pt
 }
 
 
@@ -98,7 +99,8 @@
     mathescape=true,
     rulecolor=mygray,
     stepnumber=2,
-    stepnumberfromfirst
+    stepnumberfromfirst,
+    tabsize=2
 }
 
 \renewcommand{\theFancyVerbLine}{%

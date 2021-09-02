@@ -28,6 +28,17 @@ include:
         - misc/aliens.hpp
       - Hilbert Curve:
         - misc/hilbert.hpp
+  - Math:
+    - Number Theory:
+      - Mod Struct:
+        - math/number-theory/modular.tex
+        - math/number-theory/modular.hpp
+      - Miller-Rabin:
+        - math/number-theory/miller-rabin.hpp
+    - Combinatorics:
+      - Matroid Intersection:
+        - math/combinatorics/matroid.tex
+        - math/combinatorics/matroid.hpp
 dependencies:
   show: true
   ignore_cycles: false
