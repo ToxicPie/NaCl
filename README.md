@@ -13,4 +13,4 @@ Run `make help` for a list of build commands.
     -   `pyyaml` package
     -   `pygments` package
 -   Clang-Format 13 or newer
--   Fira Code and Fira Mono fonts
+-   Fira Mono font
