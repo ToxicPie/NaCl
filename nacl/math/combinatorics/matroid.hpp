@@ -6,7 +6,7 @@ auto matroid_intersection(int n, const vector<int> &w) {
   for (int sz = 1; sz <= n; sz++) {
     Matroid M1(S), M2(S);
 
-    vector<vector<pii>> e(n);
+    vector<vector<pii>> e(n + 2);
     for (int j = 0; j < n; j++)
       if (!S[j]) {
         if (M1.can_add(j)) e[n].emplace_back(j, -w[j]);
@@ -29,7 +29,7 @@ auto matroid_intersection(int n, const vector<int> &w) {
     bool upd = 1;
     while (upd) {
       upd = 0;
-      for (int u = 0; u < n; u++)
+      for (int u = 0; u < n + 2; u++)
         for (auto [v, c] : e[u]) {
           pii x(dis[u].first + c, dis[u].second + 1);
           if (x < dis[v]) dis[v] = x, prev[v] = u, upd = 1;
