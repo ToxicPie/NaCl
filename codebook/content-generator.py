@@ -125,8 +125,8 @@ def generate_content(config):
                 if lang == 'tex':
                     yield f'\\input{{{path}}}'
                     continue
-                dep_str = ', '.join(file_info_map[dep][0] for dep in
-                                    dependency_graph.get_dependencies(path))
+                dep_str = ', '.join({file_info_map[dep][0] for dep in
+                                     dependency_graph.get_dependencies(path)})
                 if show_dependencies and dep_str:
                     yield f'\\requires{{{dep_str}}}'
                 hash_ = hashlib.sha256(open(path, 'rb').read()).hexdigest()[:16]
