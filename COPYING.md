@@ -9,7 +9,10 @@ are from various different sources. In competitive programming, it is common
 to use other people's solution code as a reference implementation. While we try 
 to rewrite everything ourselves, some files are directly modified from existing 
 ones.
-- Files that are self-written are released under CC0.
-- Every file from another source has a comment at the beginning containing its 
-  original author and license. Here is a list of those sources:
-  - KACTL
+
+-   Files that are self-written are released under CC0.
+-   Every file from another source has a comment at the beginning containing its 
+    original author and license. Here is a list of those sources:
+    -   [KACTL](https://github.com/kth-competitive-programming/kactl)
+    -   [ecnerwala's codebook](https://github.com/ecnerwala/icpc-book)
+    -   [Navneel Singhal's codebook](https://github.com/NavneelSinghal/CodeBook/)
