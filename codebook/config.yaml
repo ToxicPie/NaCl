@@ -28,6 +28,13 @@ include:
         - misc/aliens.hpp
       - Hilbert Curve:
         - misc/hilbert.hpp
+  - Data Structures:
+    - GNU PBDS:
+      - ds/pbds.hpp
+    - Segment Tree (ZKW):
+      - ds/segtree.hpp
+    - Wavelet Matrix:
+      - ds/wavelet-matrix.hpp
   - Math:
     - Number Theory:
       - Mod Struct:
@@ -35,10 +42,20 @@ include:
         - math/number-theory/modular.hpp
       - Miller-Rabin:
         - math/number-theory/miller-rabin.hpp
+      - Extended GCD:
+        - math/number-theory/extgcd.hpp
+      - Chinese Remainder Theorem:
+        - math/number-theory/crt.hpp
     - Combinatorics:
       - Matroid Intersection:
         - math/combinatorics/matroid.tex
         - math/combinatorics/matroid.hpp
+  - Geometry:
+    - Point:
+      - geometry/point.hpp
+      - Quarternion:
+        - geometry/quaternion.hpp
+
 dependencies:
   show: true
   ignore_cycles: false

@@ -1,6 +1,12 @@
 constexpr int N = 100;
 constexpr int INF = 1e9;
 
+struct Matroid {       // represents an independent set
+  Matroid(bitset<N>);  // initialize from an independent set
+  bool can_add(int);   // if adding will break independence
+  Matroid remove(int); // removing from the set
+};
+
 auto matroid_intersection(int n, const vector<int> &w) {
   bitset<N> S;
   for (int sz = 1; sz <= n; sz++) {
