@@ -7,13 +7,13 @@ include:
         - misc/default-code.hpp
     - 'How Did We Get Here?':
       - Macros:
-        - misc/macros.tex
-        - misc/macros.hpp
+        - misc/speed/macros.tex
+        - misc/speed/macros.hpp
       - constexpr:
-        - misc/constexpr.tex
-        - misc/constexpr.hpp
+        - misc/speed/constexpr.tex
+        - misc/speed/constexpr.hpp
       - Bump Allocator:
-        - misc/bump-allocator.hpp
+        - misc/speed/bump-allocator.hpp
     - Tools:
       - Floating Point Binary Search:
         - misc/float-binary-search.hpp
