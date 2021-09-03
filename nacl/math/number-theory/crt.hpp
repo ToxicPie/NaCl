@@ -1,4 +1,6 @@
 #include "extgcd.hpp"
+// for 0 <= a < m, 0 <= b < n, returns the smallest x >= 0
+// such that x % m == a and x % n == b
 ll crt(ll a, ll m, ll b, ll n) {
   if (n > m) swap(a, b), swap(m, n);
   auto [x, y, g] = extgcd(m, n);
