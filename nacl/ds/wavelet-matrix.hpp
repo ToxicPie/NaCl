@@ -1,7 +1,7 @@
 /// author: Navneel Singhal
 /// same implementation, semi-minified
 
-#pragma GCC target("popcnt,abm,bmi,bmi2")
+#pragma GCC target("popcnt,bmi2")
 #include <immintrin.h> // keep-line
 
 // T is unsigned. You might want to compress values first
@@ -20,8 +20,8 @@ template <typename T> struct wavelet_matrix {
       cnt0 = rank0(n);
     }
     void set_bit(uint i) { bits[i / W] |= 1ULL << i % W; }
-    bool get_bit(uint i) const {
-      return !!(bits[i / W] & 1ULL << (i % W));
+    bool operator[](uint i) const {
+      return !!(bits[i / W] & 1ULL << i % W);
     }
     uint rank1(uint i) const {
       return sum[i / W] +
@@ -43,9 +43,17 @@ template <typename T> struct wavelet_matrix {
       b[h].build();
       int il = 0, ir = b[h].cnt0;
       for (uint i = 0; i < n; ++i)
-        nxt[(b[h].get_bit(i) ? ir : il)++] = cur[i];
+        nxt[(b[h][i] ? ir : il)++] = cur[i];
       swap(cur, nxt);
     }
+  }
+  T operator[](uint i) const {
+    T res = 0;
+    for (int h = lg; h--;)
+      if (b[h][i])
+        i += b[h].cnt0 - b[h].rank0(i), res |= T(1) << h;
+      else i = b[h].rank0(i);
+    return res;
   }
   // query k-th smallest (0-based) in a[l, r)
   T kth(uint l, uint r, uint k) const {
