@@ -7,6 +7,8 @@ include:
       - Macros:
         - misc/speed/macros.tex
         - misc/speed/macros.hpp
+      - Fast I/O:
+        - misc/speed/fast-io.hpp
       - constexpr:
         - misc/speed/constexpr.tex
         - misc/speed/constexpr.hpp
