@@ -3,8 +3,6 @@ include:
     - Contest:
       - Makefile:
         - misc/Makefile
-      - Default Code:
-        - misc/default-code.hpp
     - 'How Did We Get Here?':
       - Macros:
         - misc/speed/macros.tex
