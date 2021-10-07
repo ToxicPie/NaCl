@@ -28,6 +28,8 @@ include:
         - misc/aliens.hpp
       - Hilbert Curve:
         - misc/hilbert.hpp
+      - Infinite Grid Knight Distance:
+        - misc/knight.hpp
   - Data Structures:
     - GNU PBDS:
       - ds/pbds.hpp
