@@ -1,6 +1,6 @@
 ll hilbert(ll n, int x, int y) {
   ll res = 0;
-  for (ll s = n / 2; s; s >>= 1) {
+  for (ll s = n; s /= 2;) {
     int rx = !!(x & s), ry = !!(y & s);
     res += s * s * ((3 * rx) ^ ry);
     if (ry == 0) {
