@@ -52,6 +52,8 @@ include:
       - Matroid Intersection:
         - math/combinatorics/matroid.tex
         - math/combinatorics/matroid.hpp
+    - Fast Walsh-Hadamard Transform:
+      - numeric/fwht.hpp
   - Geometry:
     - Point:
       - geometry/point.hpp
