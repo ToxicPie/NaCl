@@ -66,9 +66,6 @@ include:
       - geometry/point.hpp
       - Quarternion:
         - geometry/quaternion.hpp
-  - Strings:
-    - Suffix Array:
-      - strings/suffix-array.hpp
 
 dependencies:
   show: true
