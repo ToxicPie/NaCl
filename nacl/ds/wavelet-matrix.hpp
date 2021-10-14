@@ -31,7 +31,6 @@ template <typename T> struct wavelet_matrix {
   };
   uint n, lg;
   vector<bit_vector> b;
-  wavelet_matrix(uint _n = 0) : n(_n) {}
   wavelet_matrix(const vector<T> &a) : n(a.size()) {
     lg =
     __lg(max(*max_element(a.begin(), a.end()), T(1))) + 1;
