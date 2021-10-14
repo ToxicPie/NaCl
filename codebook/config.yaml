@@ -51,6 +51,8 @@ include:
         - math/number-theory/extgcd.hpp
       - Chinese Remainder Theorem:
         - math/number-theory/crt.hpp
+      - Rational Number Binary Search:
+        - math/number-theory/frac-bs.hpp
     - Combinatorics:
       - Matroid Intersection:
         - math/combinatorics/matroid.tex
