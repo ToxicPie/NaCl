@@ -37,6 +37,9 @@ include:
       - ds/segtree.hpp
     - Wavelet Matrix:
       - ds/wavelet-matrix.hpp
+  - Graph:
+    - Strongly Connected Components:
+      - graph/scc.hpp
   - Math:
     - Number Theory:
       - Mod Struct:
