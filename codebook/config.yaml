@@ -53,6 +53,8 @@ include:
         - math/number-theory/crt.hpp
       - Rational Number Binary Search:
         - math/number-theory/frac-bs.hpp
+      - Farey Sequence:
+        - math/number-theory/farey-sequence.hpp
     - Combinatorics:
       - Matroid Intersection:
         - math/combinatorics/matroid.tex
