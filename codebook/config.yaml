@@ -3,6 +3,8 @@ include:
     - Contest:
       - Makefile:
         - misc/Makefile
+      - Debug List:
+        - misc/debug-list.md
     - 'How Did We Get Here?':
       - Macros:
         - misc/speed/macros.tex
@@ -75,8 +77,8 @@ include:
         - graph/flows/marriage.hpp
       - Kuhn-Munkres algorithm:
         - graph/flows/km.hpp
-      # - Network Simplex:
-      #   - graph/flows/network-simplex.hpp
+      - Network Simplex:
+        - graph/flows/network-simplex.hpp
     - Shortest Path Faster Algorithm:
       - graph/spfa.hpp
     - Strongly Connected Components:
@@ -187,6 +189,8 @@ include:
       - geometry/point-inclusion.hpp
       - Convex Version:
         - geometry/convex-inclusion.hpp
+      - Offline Multiple Points Version:
+        - geometry/multi-inclusion.hpp
     - Closest Pair:
       - geometry/closest-pair.hpp
     - Minimum Enclosing Circle:
@@ -212,8 +216,6 @@ include:
       - strings/min-rotation.hpp
     - Palindromic Tree:
       - strings/palindromic-tree.hpp
-  - Debug List:
-    - misc/debug-list.md
 
 dependencies:
   show: true
