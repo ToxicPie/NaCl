@@ -138,6 +138,28 @@ include:
       - geometry/point.hpp
       - Quarternion:
         - geometry/quaternion.hpp
+      - Spherical Coordinates:
+        - geometry/spherical.hpp
+    - Convex Hull:
+      - geometry/convex-hull.hpp
+      - 3D Hull:
+        - geometry/3d-hull.hpp
+    - Angular Sort:
+      - geometry/angular-sort.hpp
+    - Convex Polygon Minkowski Sum:
+      - geometry/minkowski-sum.hpp
+    - Point In Polygon:
+      - geometry/point-inclusion.hpp
+      - Convex Version:
+        - geometry/convex-inclusion.hpp
+    - Closest Pair:
+      - geometry/closest-pair.hpp
+    - Minimum Enclosing Circle:
+      - geometry/min-enclosing-circle.hpp
+    - Delaunay Triangulation:
+      - geometry/delaunay.hpp
+    - Half Plane Intersection:
+      - geometry/half-plane-intersection.hpp
   - Strings:
     - Aho-Corasick Automaton:
       - strings/ahocorasick.hpp
