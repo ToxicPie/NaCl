@@ -42,6 +42,8 @@ include:
   - Graph:
     - Strongly Connected Components:
       - graph/scc.hpp
+    - Triconnected Components:
+      - graph/tcc.hpp
   - Math:
     - Number Theory:
       - Mod Struct:
