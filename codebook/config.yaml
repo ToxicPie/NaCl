@@ -37,8 +37,14 @@ include:
       - ds/pbds.hpp
     - Segment Tree (ZKW):
       - ds/segtree.hpp
+    - Line Container:
+      - ds/line-container.hpp
+    - Heavy-Light Decomposition:
+      - ds/hld.hpp
     - Wavelet Matrix:
       - ds/wavelet-matrix.hpp
+    - Link-Cut Tree:
+      - ds/lct.hpp
   - Graph:
     - Modeling:
       - graph/model.tex
