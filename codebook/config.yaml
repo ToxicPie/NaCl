@@ -91,6 +91,8 @@ include:
       - strings/min-rotation.hpp
     - Palindromic Tree:
       - strings/palindromic-tree.hpp
+  - Debug List:
+    - misc/debug-list.md
 
 dependencies:
   show: true

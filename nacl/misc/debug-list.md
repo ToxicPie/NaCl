@@ -1,0 +1,48 @@
+- Pre-submit:
+  - Did you make a typo when copying a template?
+  - Test more cases if unsure.
+    - Write a naive solution and check small cases.
+  - Submit the correct file.
+
+- General Debugging:
+  - Read the whole problem again.
+  - Have a teammate read the problem.
+  - Have a teammate read your code.
+    - Explain you solution to them (or a rubber duck).
+  - Print the code and its output / debug output.
+  - Go to the toilet.
+
+- Wrong Answer:
+  - Any possible overflows?
+    - > `__int128` ?
+    - Try `-ftrapv` or `#pragma GCC optimize("trapv")`
+  - Floating point errors?
+    - > `long double` ?
+    - turn off math optimizations
+    - check for `==`, `>=`, `acos(1.000000001)`, etc.
+  - Did you forget to sort or unique?
+  - Generate large and worst "corner" cases.
+  - Check your `m` / `n`, `i` / `j` and `x` / `y`.
+  - Are everything initialized or reset properly?
+  - Are you sure about the STL thing you are using?
+    - Read cppreference (should be available).
+  - Print everything and run it on pen and paper.
+
+- Time Limit Exceeded:
+  - Calculate your time complexity again.
+  - Does the program actually end?
+    - Check for `while(q.size())` etc.
+  - Test the largest cases locally.
+  - Did you do unnecessary stuff?
+    - e.g. pass vectors by value
+    - e.g. `memset` for every test case
+  - Is your constant factor reasonable?
+
+- Runtime Error:
+  - Check memory usage.
+    - Forget to clear or destroy stuff?
+    - > `vector::shrink_to_fit()`
+  - Stack overflow?
+  - Bad pointer / array access?
+    - Try `-fsanitize=address`
+  - Division by zero? NaN's?
