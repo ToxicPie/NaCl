@@ -142,11 +142,32 @@ include:
     - Theorems:
       - math/theorems.tex
   - Numeric:
+    - Barrett Reduction:
+      - numeric/barrett-reduction.hpp
+    - Long Long Multiplication:
+      - numeric/ll-mul.hpp
     - Fast Fourier Transform:
       - numeric/fft.hpp
       - numeric/fft-usage.hpp
     - Fast Walsh-Hadamard Transform:
       - numeric/fwht.hpp
+    - Linear Recurrences:
+      - Berlekamp-Massey Algorithm:
+        - numeric/berlekamp-massey.hpp
+      - Linear Recurrence Calculation:
+        - numeric/linear-recurrence.hpp
+    - Matrices:
+      - Determinant:
+        - numeric/det-mod.hpp
+        - numeric/det-double.hpp
+      - Inverse:
+        - numeric/inverse.hpp
+      - Solve Linear Equation:
+        - numeric/linear-eq.hpp
+    - Polynomial Interpolation:
+      - numeric/interpolation.hpp
+    - Simplex Algorithm:
+      - numeric/simplex.hpp
   - Geometry:
     - Point:
       - geometry/point.hpp
