@@ -51,10 +51,24 @@ include:
         - math/number-theory/modular.hpp
       - Miller-Rabin:
         - math/number-theory/miller-rabin.hpp
+      - Linear Sieve:
+        - math/number-theory/sieve.hpp
+      - Get Factors:
+        - math/number-theory/all-factors.hpp
+      - Binary GCD:
+        - math/number-theory/binary-gcd.hpp
       - Extended GCD:
         - math/number-theory/extgcd.hpp
       - Chinese Remainder Theorem:
         - math/number-theory/crt.hpp
+      - Baby-Step Giant-Step:
+        - math/number-theory/bsgs.hpp
+      - Pollard's Rho:
+        - math/number-theory/pollard-rho.hpp
+      - Tonelli-Shanks Algorithm:
+        - math/number-theory/tonelli-shanks.hpp
+      - Chinese Sieve:
+        - math/number-theory/djs.hpp
       - Rational Number Binary Search:
         - math/number-theory/frac-bs.hpp
       - Farey Sequence:
@@ -63,6 +77,12 @@ include:
       - Matroid Intersection:
         - math/combinatorics/matroid.tex
         - math/combinatorics/matroid.hpp
+      - De Brujin Sequence:
+        - math/combinatorics/de-brujin.hpp
+      - Multinomial:
+        - math/combinatorics/multinomial.hpp
+    - Theorems:
+      - math/theorems.tex
   - Numeric:
     - Fast Fourier Transform:
       - numeric/fft.hpp
