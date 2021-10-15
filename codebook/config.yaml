@@ -74,6 +74,23 @@ include:
       - geometry/point.hpp
       - Quarternion:
         - geometry/quaternion.hpp
+  - Strings:
+    - Aho-Corasick Automaton:
+      - strings/ahocorasick.hpp
+    - Suffix Array:
+      - strings/suffix-array.hpp
+    - Suffix Tree:
+      - strings/suffix-tree.hpp
+    - Cocke-Younger-Kasami Algorithm:
+      - strings/cyk.hpp
+    - Z Value:
+      - strings/z-value.hpp
+    - Manacher's Algorithm:
+      - strings/manacher.hpp
+    - Minimum Rotation:
+      - strings/min-rotation.hpp
+    - Palindromic Tree:
+      - strings/palindromic-tree.hpp
 
 dependencies:
   show: true
