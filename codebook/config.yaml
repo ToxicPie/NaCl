@@ -40,10 +40,54 @@ include:
     - Wavelet Matrix:
       - ds/wavelet-matrix.hpp
   - Graph:
+    - Modeling:
+      - graph/model.tex
+    - Matching/Flows:
+      - Dinic's Algorithm:
+        - graph/flows/dinic.hpp
+      - Minimum Cost Flow:
+        - graph/flows/min-cost-flow.hpp
+      - Gomory-Hu Tree:
+        - graph/flows/gomory-hu.hpp
+      - Global Minimum Cut:
+        - graph/flows/global-min-cut.hpp
+      - Bipartite Minimum Cover:
+        - graph/flows/min-bi-cover.hpp
+      - Edmonds' Algorithm:
+        - graph/flows/edmonds.hpp
+      - Minimum Weight Matching:
+        - graph/flows/min-weight-general.hpp
+      - Stable Marriage:
+        - graph/flows/marriage.hpp
+      - Kuhn-Munkres algorithm:
+        - graph/flows/km.hpp
+      # - Network Simplex:
+      #   - graph/flows/network-simplex.hpp
+    - Shortest Path Faster Algorithm:
+      - graph/spfa.hpp
     - Strongly Connected Components:
       - graph/scc.hpp
+      - 2-Satisfiability:
+        - graph/2sat.hpp
+    - Biconnected Components:
+      - Articulation Points:
+        - graph/tarjan-ap.hpp
+      - Bridges:
+        - graph/tarjan-b.hpp
     - Triconnected Components:
       - graph/tcc.hpp
+    - Centroid Decomposition:
+      - graph/centroid-decomposition.hpp
+    - Minimum Mean Cycle:
+      - graph/min-mean-cycle.hpp
+    - Directed MST:
+      - graph/dmst.hpp
+    - Maximum Clique:
+      - graph/clique.hpp
+    - Dominator Tree:
+      - graph/dominator-tree.hpp
+    - Manhattan Distance MST:
+      - graph/manhattan-mst.hpp
   - Math:
     - Number Theory:
       - Mod Struct:
