@@ -30,6 +30,8 @@ include:
         - misc/hilbert.hpp
       - Infinite Grid Knight Distance:
         - misc/knight.hpp
+      - Poker Hand:
+        - misc/poker.hpp
   - Data Structures:
     - GNU PBDS:
       - ds/pbds.hpp
