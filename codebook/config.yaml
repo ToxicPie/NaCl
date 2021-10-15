@@ -9,6 +9,8 @@ include:
         - misc/speed/macros.hpp
       - Fast I/O:
         - misc/speed/fast-io.hpp
+        - Kotlin:
+          - misc/speed/kotlin-io.kt
       - constexpr:
         - misc/speed/constexpr.tex
         - misc/speed/constexpr.hpp
@@ -21,6 +23,8 @@ include:
         - misc/splitmix64.hpp
       - '<random>':
         - misc/random.hpp
+      - x86 Stack Hack:
+        - misc/stack-size.hpp
     - Algorithms:
       - Bit Hacks:
         - misc/bit-hacks.hpp
@@ -32,6 +36,10 @@ include:
         - misc/knight.hpp
       - Poker Hand:
         - misc/poker.hpp
+      - Longest Increasing Subsequence:
+        - misc/lis.hpp
+      - Mo's Algorithm on Tree:
+        - misc/mo-tree.hpp
   - Data Structures:
     - GNU PBDS:
       - ds/pbds.hpp
