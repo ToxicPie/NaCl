@@ -30,5 +30,6 @@ struct TarjanScc {
     for (int i = 0; i < n; i++)
       if (!time[i]) dfs(i);
     reverse(scc.begin(), scc.end());
+    // scc in topological order
   }
 };
