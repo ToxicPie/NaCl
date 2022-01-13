@@ -3,8 +3,6 @@ include:
     - Contest:
       - Makefile:
         - misc/Makefile
-      - Debug List:
-        - misc/debug-list.md
     - 'How Did We Get Here?':
       - Macros:
         - misc/speed/macros.tex
@@ -49,6 +47,8 @@ include:
       - ds/segtree.hpp
     - Line Container:
       - ds/line-container.hpp
+    - Li-Chao Tree:
+      - ds/li-chao.hpp
     - Heavy-Light Decomposition:
       - ds/hld.hpp
     - Wavelet Matrix:
@@ -77,8 +77,6 @@ include:
         - graph/flows/marriage.hpp
       - Kuhn-Munkres algorithm:
         - graph/flows/km.hpp
-      - Network Simplex:
-        - graph/flows/network-simplex.hpp
     - Shortest Path Faster Algorithm:
       - graph/spfa.hpp
     - Strongly Connected Components:
@@ -141,6 +139,9 @@ include:
         - math/combinatorics/de-brujin.hpp
       - Multinomial:
         - math/combinatorics/multinomial.hpp
+    - Algebra:
+      - Formal Power Series:
+        - math/algebra/formal-power-series.hpp
     - Theorems:
       - math/theorems.tex
   - Numeric:
@@ -153,6 +154,8 @@ include:
       - numeric/fft-usage.hpp
     - Fast Walsh-Hadamard Transform:
       - numeric/fwht.hpp
+    - Subset Convolution:
+      - numeric/subset-convolution.hpp
     - Linear Recurrences:
       - Berlekamp-Massey Algorithm:
         - numeric/berlekamp-massey.hpp
@@ -164,6 +167,8 @@ include:
         - numeric/det-double.hpp
       - Inverse:
         - numeric/inverse.hpp
+      - Characteristic Polynomial:
+        - numeric/char-poly.hpp
       - Solve Linear Equation:
         - numeric/linear-eq.hpp
     - Polynomial Interpolation:
@@ -177,6 +182,8 @@ include:
         - geometry/quaternion.hpp
       - Spherical Coordinates:
         - geometry/spherical.hpp
+    - Segments:
+      - geometry/segments.hpp
     - Convex Hull:
       - geometry/convex-hull.hpp
       - 3D Hull:
@@ -197,9 +204,13 @@ include:
       - geometry/min-enclosing-circle.hpp
     - Delaunay Triangulation:
       - geometry/delaunay.hpp
+      - Slower Version:
+        - geometry/delaunay-slow.hpp
     - Half Plane Intersection:
       - geometry/half-plane-intersection.hpp
   - Strings:
+    - Knuth-Morris-Pratt Algorithm:
+      - strings/kmp.hpp
     - Aho-Corasick Automaton:
       - strings/ahocorasick.hpp
     - Suffix Array:
@@ -216,6 +227,8 @@ include:
       - strings/min-rotation.hpp
     - Palindromic Tree:
       - strings/palindromic-tree.hpp
+  - Debug List:
+    - misc/debug-list.md
 
 dependencies:
   show: true

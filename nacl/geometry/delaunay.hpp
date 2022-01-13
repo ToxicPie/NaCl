@@ -1,4 +1,4 @@
-// source: KACTL
+/// source: KACTL
 
 typedef Point<ll> P;
 typedef struct Quad *Q;

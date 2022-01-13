@@ -15,4 +15,5 @@ ones.
     original author and license. Here is a list of those sources:
     -   [KACTL](https://github.com/kth-competitive-programming/kactl)
     -   [ecnerwala's codebook](https://github.com/ecnerwala/icpc-book)
-    -   [Navneel Singhal's codebook](https://github.com/NavneelSinghal/CodeBook/)
+    -   [Navneel Singhal's codebook](https://github.com/NavneelSinghal/CodeBook)
+    -   [Nyaan's library](https://github.com/NyaanNyaan/library)

@@ -1,4 +1,4 @@
-// source: KACTL
+/// source: KACTL
 
 // returns [(dist, from, to), ...]
 // then do normal mst afterwards
