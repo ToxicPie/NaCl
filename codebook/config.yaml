@@ -5,15 +5,15 @@ include:
         - misc/Makefile
     - 'How Did We Get Here?':
       - Macros:
-        - misc/speed/macros.tex
+        # - misc/speed/macros.tex
         - misc/speed/macros.hpp
       - Fast I/O:
         - misc/speed/fast-io.hpp
         - Kotlin:
           - misc/speed/kotlin-io.kt
-      - constexpr:
-        - misc/speed/constexpr.tex
-        - misc/speed/constexpr.hpp
+      # - constexpr:
+      #   - misc/speed/constexpr.tex
+      #   - misc/speed/constexpr.hpp
       - Bump Allocator:
         - misc/speed/bump-allocator.hpp
     - Tools:
@@ -25,6 +25,8 @@ include:
         - misc/random.hpp
       - x86 Stack Hack:
         - misc/stack-size.hpp
+      - ctypes:
+        - misc/libgmp.py
     - Algorithms:
       - Bit Hacks:
         - misc/bit-hacks.hpp
@@ -32,10 +34,10 @@ include:
         - misc/aliens.hpp
       - Hilbert Curve:
         - misc/hilbert.hpp
-      - Infinite Grid Knight Distance:
-        - misc/knight.hpp
-      - Poker Hand:
-        - misc/poker.hpp
+      # - Infinite Grid Knight Distance:
+      #   - misc/knight.hpp
+      # - Poker Hand:
+      #   - misc/poker.hpp
       - Longest Increasing Subsequence:
         - misc/lis.hpp
       - Mo's Algorithm on Tree:
@@ -49,8 +51,12 @@ include:
       - ds/line-container.hpp
     - Li-Chao Tree:
       - ds/li-chao.hpp
-    - Heavy-Light Decomposition:
-      - ds/hld.hpp
+    # - Heavy-Light Decomposition:
+    #   - ds/hld.hpp
+    - adamant HLD:
+      - ds/adamant-hld.hpp
+    - van Emde Boas Tree:
+      - ds/veb-tree.hpp
     - Wavelet Matrix:
       - ds/wavelet-matrix.hpp
     - Link-Cut Tree:
@@ -102,6 +108,8 @@ include:
       - graph/dominator-tree.hpp
     - Manhattan Distance MST:
       - graph/manhattan-mst.hpp
+    - Virtual Tree:
+      - graph/virtual-tree.hpp
   - Math:
     - Number Theory:
       - Mod Struct:
@@ -121,6 +129,8 @@ include:
         - math/number-theory/crt.hpp
       - Baby-Step Giant-Step:
         - math/number-theory/bsgs.hpp
+      - Pohlig-Hellman Algorithm:
+        - math/number-theory/pohlig-hellman.tex
       - Pollard's Rho:
         - math/number-theory/pollard-rho.hpp
       - Tonelli-Shanks Algorithm:
@@ -139,9 +149,9 @@ include:
         - math/combinatorics/de-brujin.hpp
       - Multinomial:
         - math/combinatorics/multinomial.hpp
-    - Algebra:
-      - Formal Power Series:
-        - math/algebra/formal-power-series.hpp
+    # - Algebra:
+    #   - Formal Power Series:
+    #     - math/algebra/formal-power-series.hpp
     - Theorems:
       - math/theorems.tex
   - Numeric:
@@ -149,6 +159,7 @@ include:
       - numeric/barrett-reduction.hpp
     - Long Long Multiplication:
       - numeric/ll-mul.hpp
+      # - numeric/ll-mul-asm.hpp
     - Fast Fourier Transform:
       - numeric/fft.hpp
       - numeric/fft-usage.hpp
@@ -190,6 +201,8 @@ include:
         - geometry/3d-hull.hpp
     - Angular Sort:
       - geometry/angular-sort.hpp
+    - Convex Hull Tangent:
+      - geometry/convex-tangent.hpp
     - Convex Polygon Minkowski Sum:
       - geometry/minkowski-sum.hpp
     - Point In Polygon:
@@ -204,7 +217,7 @@ include:
       - geometry/min-enclosing-circle.hpp
     - Delaunay Triangulation:
       - geometry/delaunay.hpp
-      - Slower Version:
+      - Quadratic Time Version:
         - geometry/delaunay-slow.hpp
     - Half Plane Intersection:
       - geometry/half-plane-intersection.hpp
@@ -223,12 +236,14 @@ include:
       - strings/z-value.hpp
     - Manacher's Algorithm:
       - strings/manacher.hpp
-    - Minimum Rotation:
-      - strings/min-rotation.hpp
+    # - Minimum Rotation:
+    #   - strings/min-rotation.hpp
+    - Lyndon Factorization:
+      - strings/duval.hpp
     - Palindromic Tree:
       - strings/palindromic-tree.hpp
-  - Debug List:
-    - misc/debug-list.md
+  # - Debug List:
+  #   - misc/debug-list.md
 
 dependencies:
   show: true

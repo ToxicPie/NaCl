@@ -1,7 +1,7 @@
 struct MCF {
   struct edge {
     ll to, from, cap, flow, cost, rev;
-  } * fromE[MAXN];
+  } *fromE[MAXN];
   vector<edge> v[MAXN];
   ll n, s, t, flows[MAXN], dis[MAXN], pi[MAXN], flowlim;
   void make_edge(int s, int t, ll cap, ll cost) {

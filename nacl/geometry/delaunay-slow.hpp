@@ -1,5 +1,5 @@
 /// source: KACTL
-
+#include "3d-hull.hpp"
 template <class P, class F>
 void delaunay(vector<P> &ps, F trifun) {
   if (sz(ps) == 3) {

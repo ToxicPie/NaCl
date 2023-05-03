@@ -41,7 +41,6 @@ class DependencyGraph:
         result = []
         in_degrees = [len(dep_set) for dep_set in self.dep_sets]
         queue = SimpleQueue()
-        print(self.use_sets, in_degrees)
         for node, deg in enumerate(in_degrees):
             if deg == 0:
                 queue.put(node)
@@ -99,7 +98,6 @@ def generate_content(config):
         raise KeyError('Key `include` not found in config.')
 
     parse_all(includes, 'include')
-    print(file_info_map)
 
     dependency_graph = DependencyGraph(file_info_map.keys())
     for filename, (title, lang) in file_info_map.items():

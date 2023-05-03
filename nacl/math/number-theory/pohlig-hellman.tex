@@ -1,0 +1,7 @@
+Goal: Find an integer $x$ such that $g^x = h$ in an order $p^e$ group.
+\begin{enumerate}
+    \item Let $x=0$ and $\gamma=g^{p^{e-1}}$.
+    \item For $k=0,1,\dots,e-1$: \\
+        Let $c=(g^{-x}h)^{p^{e-1-k}}$, and compute $d$ such that $\gamma^d=c$.\\
+        Set $x=x+p^kd$.
+\end{enumerate}

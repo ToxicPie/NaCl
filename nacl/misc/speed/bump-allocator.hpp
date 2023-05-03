@@ -2,7 +2,7 @@
 /// author: Simon Lindholm
 
 // global bump allocator
-char mem[256 << 20]; // 256 MB
+char mem[256 << 20]; // 256 MiB
 size_t rsp = sizeof mem;
 void *operator new(size_t s) {
   assert(s < rsp); // MLE
@@ -14,7 +14,7 @@ void operator delete(void *) {}
 char mem[256 << 20];
 size_t rsp = sizeof mem;
 template <typename T> struct bump {
-  typedef T value_type;
+  using value_type = T;
   bump() {}
   template <typename U> bump(U, ...) {}
   T *allocate(size_t n) {

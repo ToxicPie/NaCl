@@ -42,16 +42,17 @@
 
 \setlength{\topmargin}{0pt}
 \setlength{\headsep}{10pt}
-\setlength{\textheight}{780pt}
+\setlength{\textheight}{765pt} % no footer
+% \setlength{\textheight}{760pt}
 \setlength{\footskip}{20pt}
-\setlength{\voffset}{-60pt}
-\setlength{\textwidth}{560pt}
+\setlength{\voffset}{-50pt}
+\setlength{\textwidth}{550pt}
 \setlength{\marginparsep}{0pt}
 \setlength{\marginparwidth}{0pt}
 \setlength{\marginparpush}{0pt}
 \setlength{\oddsidemargin}{0pt}
 \setlength{\evensidemargin}{0pt}
-\setlength{\hoffset}{-53pt}
+\setlength{\hoffset}{-45pt}
 \setlength{\columnsep}{15pt}
 \setlength{\columnseprule}{0pt}
 \setlength{\parskip}{2.4pt}
@@ -126,15 +127,16 @@
 \team{Team name}{School name}
 \codetheme{default}
 
-\title{Codebook for \@teamname}
+\title{\@teamname\ Team Reference Document}
 \author{\@teamname}
 
 \fancyhead[L]{\bfseries\small \@teamname\ (\@teaminstitution)}
 \fancyhead[R]{\bfseries\small Page \thepage}
-\fancyfoot[C]{{
-    \footnotesize\ttfamily
-    https://github.com/toxicpie/nacl
-}}
+% \fancyfoot[C]{{
+%     \footnotesize\ttfamily
+%     https://github.com/toxicpie/nacl
+% }}
+\fancyfoot[C]{}
 
 \newcommand\requires[1]{%
 \vspace{-1.6ex}%

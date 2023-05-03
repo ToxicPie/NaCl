@@ -4,7 +4,7 @@ struct SAM {
   struct Node {
     Node *green, *edge[maxc];
     int max_len, in, times;
-  } * root, *last, reg[maxn * 2];
+  } *root, *last, reg[maxn * 2];
   int top;
   Node *get_node(int _max) {
     Node *re = &reg[top++];

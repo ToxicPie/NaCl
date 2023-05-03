@@ -3,7 +3,8 @@ import java.util.*
 
 @JvmField val cin = System.`in`.bufferedReader()
 @JvmField val cout = PrintWriter(System.out, false)
-@JvmField var tokenizer: StringTokenizer = StringTokenizer("")
+@JvmField var tokenizer: StringTokenizer
+                       = StringTokenizer("")
 fun nextLine() = cin.readLine()!!
 fun read(): String {
   while(!tokenizer.hasMoreTokens())
